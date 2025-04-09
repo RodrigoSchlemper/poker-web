@@ -49,7 +49,7 @@
     ];
 
     $(document).ready(function () {
-      $.getJSON("http://localhost:5000/jogos", function (data) {
+      $.getJSON("https://poker-web-1.onrender.com/jogos", function (data) {
         const table = $('#jogosTable').DataTable();
         data.forEach(row => {
           table.row.add(orderedCols.map(col => row[col])).draw();

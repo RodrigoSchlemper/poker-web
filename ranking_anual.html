@@ -25,7 +25,7 @@
     const tabelasPorAno = [];
 
     anos.forEach(ano => {
-      $.getJSON(`http://localhost:5000/ranking_anual/${ano}`, function (data) {
+      $.getJSON(`https://poker-web-1.onrender.com/ranking_anual/${ano}`, function (data) {
         if (!data.length) return;
         let tabela = `<h3 class="mt-5">${ano}</h3><table id="table_${ano}" class="table table-bordered table-striped"><thead><tr>`;
         orderedCols.forEach(col => tabela += `<th>${col}</th>`);

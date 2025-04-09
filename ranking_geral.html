@@ -43,7 +43,7 @@
     ];
 
     $(document).ready(function () {
-      $.getJSON("http://localhost:5000/ranking", function (data) {
+      $.getJSON("https://poker-web-1.onrender.com/ranking", function (data) {
         const table = $('#rankingTable').DataTable();
         data.forEach(row => {
           table.row.add(orderedCols.map(col => row[col])).draw();
